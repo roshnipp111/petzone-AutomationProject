@@ -8,6 +8,7 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -43,6 +44,10 @@ public class ClinicApointment {
 	 WebElement next2;
 	 @FindBy(xpath="//*[@id=\"form-field-message\"]")
 	 WebElement appointmentReason;
+	 @FindBy(xpath="//*[@id=\"post-504\"]/div/div/div/section/div/div/div/div[3]/div/form/div[2]/div[3]/div[3]/label")
+	 WebElement upload;
+	 
+	 
 	
 	 
 	 
@@ -56,7 +61,7 @@ public class ClinicApointment {
 	 
 	 
 	 
-	 public void appointment() throws InterruptedException, AWTException
+	 public void petappointment() throws InterruptedException, AWTException
 	 {
 		 Thread.sleep(1000);
 		 apponClick.click();
@@ -71,15 +76,12 @@ public class ClinicApointment {
 		 appointmentReason.sendKeys("dog have allergy");
 		 
 		 Thread.sleep(2000);
-		 WebElement hoverElement = driver.findElement(By.xpath("//*[@id='form-field-field_75a1e16']"));
-		 Actions actions = new Actions(driver);
-		 actions.moveToElement(hoverElement).perform();
-		 WebElement upload = driver.findElement(By.xpath("//*[@id='form-field-field_75a1e16']"));
 		 upload.click();
+		 Thread.sleep(1000);
 		 fileUpload("C:\\Users\\ROSHNI\\Desktop\\images.jpg");
 				
 			}
-			private void fileUpload(String p) throws AWTException, InterruptedException {
+			public void fileUpload(String p) throws AWTException, InterruptedException {
 				StringSelection strSelection=new StringSelection(p);
 				Toolkit.getDefaultToolkit().getSystemClipboard().setContents(strSelection, null);
 				
@@ -94,7 +96,8 @@ public class ClinicApointment {
 				rob.keyPress(KeyEvent.VK_ENTER);
 				rob.keyRelease(KeyEvent.VK_ENTER);
 				rob.delay(3000);
-	 }
-	
+				
+	 }	
+	}
 
-}
+

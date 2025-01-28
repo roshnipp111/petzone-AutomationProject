@@ -5,8 +5,8 @@
     <classes>
       <class name="clinicTestPackage.PetClinicTest">
         <methods>
+          <include name="onapp"/>
           <include name="setUp"/>
-          <include name="appoinmtent"/>
         </methods>
       </class> <!-- clinicTestPackage.PetClinicTest -->
     </classes>

@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import clinicPagePackage.ClinicApointment;
 import clinicPagePackage.ClinicPage;
 import clinicPagePackage.Verifications;
+import clinicPagePackage.onlineapp;
 
 public class PetClinicTest {
 	WebDriver driver;
@@ -27,21 +28,29 @@ public class PetClinicTest {
 		driver.get("https://www.petzone.in/");
 		driver.manage().window().maximize();
 	}
-	@Test
+	
+		@Test(priority=1)
 	public void appoinmtent() throws InterruptedException, AWTException 
 	{
 		ClinicApointment ca=new ClinicApointment(driver);
-		ca.appointment();	
-		
+		ca.petappointment();	
 	}
 	
 	@Test
 	public void testing() throws IOException
 	{
 		Verifications vs=new Verifications(driver);
-		vs.screenshot();
-		vs.logoVerification();
-		vs.LinkAndResponseCount();
+	vs.screenshot();
+	vs.logoVerification();
+	  vs.LinkAndResponseCount();
+	}	
+	
+	@Test
+	public void onapp() throws InterruptedException
+	{
+		onlineapp op=new onlineapp(driver);
+		op.appbyonline();
+		
 	}
 
 }

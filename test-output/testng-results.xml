@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T12:57:37 IST" name="Default suite" finished-at="2025-01-20T12:58:07 IST" duration-ms="30289">
+  <suite started-at="2025-01-26T22:28:55 IST" name="Default suite" finished-at="2025-01-26T22:29:37 IST" duration-ms="41631">
     <groups>
     </groups>
-    <test started-at="2025-01-20T12:57:37 IST" name="Default test" finished-at="2025-01-20T12:58:07 IST" duration-ms="30289">
+    <test started-at="2025-01-26T22:28:55 IST" name="Default test" finished-at="2025-01-26T22:29:37 IST" duration-ms="41631">
       <class name="clinicTestPackage.PetClinicTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:clinicTestPackage.PetClinicTest@4a83a74a]" started-at="2025-01-20T12:57:37 IST" name="setUp" finished-at="2025-01-20T12:57:58 IST" duration-ms="20838" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:clinicTestPackage.PetClinicTest@15043a2f]" started-at="2025-01-26T22:28:55 IST" name="setUp" finished-at="2025-01-26T22:29:23 IST" duration-ms="27796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="appoinmtent()[pri:0, instance:clinicTestPackage.PetClinicTest@4a83a74a]" started-at="2025-01-20T12:57:58 IST" name="appoinmtent" finished-at="2025-01-20T12:58:04 IST" duration-ms="6555" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+        <test-method signature="onapp()[pri:0, instance:clinicTestPackage.PetClinicTest@15043a2f]" started-at="2025-01-26T22:29:23 IST" name="onapp" finished-at="2025-01-26T22:29:37 IST" duration-ms="13699" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid argument
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="elementor-popup-modal-990"]/div/div[2]/div/div/section/div/div/div/div[3]/div/form/div[2]/div[2]/div[5]/div[2]/button"}
   (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f759141a07f6de479f83d776c31ceba, clickElement {id=f.BE13B077932CD7D0B72A1E1AA6EE00D1.d.41B19E47AC6B9F6B17B2EA25EE7E88DE.e.154}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ROSHNI\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62240/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8f759141a07f6de479f83d776c31ceba)] -> xpath: //*[@id='form-field-field_75a1e16']]
-Session ID: 8f759141a07f6de479f83d776c31ceba]]>
+Command: [4b4400493077a5dfc3549cac7c5ea73b, findElement {value=//*[@id="elementor-popup-modal-990"]/div/div[2]/div/div/section/div/div/div/div[3]/div/form/div[2]/div[2]/div[5]/div[2]/button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ROSHNI\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54030/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b4400493077a5dfc3549cac7c5ea73b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="elementor-popup-modal-990"]/div/div[2]/div/div/section/div/div/div/div[3]/div/form/div[2]/div[2]/div[5]/div[2]/button"}
   (Session info: chrome=131.0.6778.265)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f759141a07f6de479f83d776c31ceba, clickElement {id=f.BE13B077932CD7D0B72A1E1AA6EE00D1.d.41B19E47AC6B9F6B17B2EA25EE7E88DE.e.154}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ROSHNI\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62240/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8f759141a07f6de479f83d776c31ceba)] -> xpath: //*[@id='form-field-field_75a1e16']]
-Session ID: 8f759141a07f6de479f83d776c31ceba
+Command: [4b4400493077a5dfc3549cac7c5ea73b, findElement {value=//*[@id="elementor-popup-modal-990"]/div/div[2]/div/div/section/div/div/div/div[3]/div/form/div[2]/div[2]/div[5]/div[2]/button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\ROSHNI\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54030}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54030/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b4400493077a5dfc3549cac7c5ea73b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -44,10 +44,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at clinicPagePackage.ClinicApointment.appointment(ClinicApointment.java:83)
-at clinicTestPackage.PetClinicTest.appoinmtent(PetClinicTest.java:34)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at clinicPagePackage.onlineapp.appbyonline(onlineapp.java:69)
+at clinicTestPackage.PetClinicTest.onapp(PetClinicTest.java:53)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -76,14 +81,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appoinmtent -->
-        <test-method signature="testing()[pri:0, instance:clinicTestPackage.PetClinicTest@4a83a74a]" started-at="2025-01-20T12:58:04 IST" name="testing" finished-at="2025-01-20T12:58:07 IST" duration-ms="2800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testing -->
+        </test-method> <!-- onapp -->
       </class> <!-- clinicTestPackage.PetClinicTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
